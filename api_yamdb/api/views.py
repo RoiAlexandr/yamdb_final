@@ -5,7 +5,6 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, mixins, permissions, status, viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 
