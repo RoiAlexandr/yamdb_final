@@ -6,8 +6,9 @@ from rest_framework import filters, mixins, permissions, status, viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from users.models import User
 from reviews.models import Category, Comment, Genre, Review, Title
+from users.models import User
+
 from .filters import TitlesFilter
 from .mixins import ListCreateDestroyViewSet
 from .permissions import (AdminOnly, AdminOrReadOnly,
@@ -15,8 +16,8 @@ from .permissions import (AdminOnly, AdminOrReadOnly,
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReadTitleSerializer,
                           ReviewSerializer, SelfUserSerializer,
-                          SignUpSerializer, TitleSerializer,
-                          TokenSerializer, UserSerializer)
+                          SignUpSerializer, TitleSerializer, TokenSerializer,
+                          UserSerializer)
 from .settings import SIGNUP_EMAIL_MESSAGE
 
 
