@@ -19,3 +19,5 @@ WORKDIR /app
 
 # Выполнить запуск сервера разработки при старте контейнера.
 CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ]
+
+LABEL author='Roi Aleksanr' version=1
